@@ -105,7 +105,7 @@ async def addfilter(client, message):
 
     await message.reply_text(f"Filter for  `{text}`  added in  **{title}**", quote=True, parse_mode=enums.ParseMode.MARKDOWN)
 
-@Client.on_message(filters.command(['viewfilters', 'filters']) & filters.incoming)
+@Client.on_message(filters.command(['afs', 'vaf']) & filters.incoming)
 async def get_all(client, message):
     
     chat_type = message.chat.type
@@ -278,11 +278,11 @@ async def give_filter(client,message):
                     if fileid == "None":
                         if btn == "[]":
                             if AUTO_DELETE:
-                                delete = await client.send_message(group_id, reply_text, disable_web_page_preview=True, reply_to_message_id=reply_id)
+                                delete = await client.send_message(group_id, reply_text, disable_web_page_preview=False, reply_to_message_id=reply_id)
                                 await asyncio.sleep(AUTO_DELETE_SECOND)
                                 await delete.delete()
                             else:
-                                await client.send_message(group_id, reply_text, disable_web_page_preview=True, reply_to_message_id=reply_id)
+                                await client.send_message(group_id, reply_text, disable_web_page_preview=False, reply_to_message_id=reply_id)
 
                         else:
                             if AUTO_DELETE:
@@ -290,7 +290,7 @@ async def give_filter(client,message):
                                 delete = await client.send_message(
                                     group_id,
                                     reply_text,
-                                    disable_web_page_preview=True,
+                                    disable_web_page_preview=False,
                                     reply_markup=InlineKeyboardMarkup(button),
                                     reply_to_message_id=reply_id
                                 )
@@ -301,7 +301,7 @@ async def give_filter(client,message):
                                 await client.send_message(
                                     group_id,
                                     reply_text,
-                                    disable_web_page_preview=True,
+                                    disable_web_page_preview=False,
                                     reply_markup=InlineKeyboardMarkup(button),
                                     reply_to_message_id=reply_id
                                 )
