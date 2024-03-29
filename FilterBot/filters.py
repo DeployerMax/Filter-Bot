@@ -105,7 +105,7 @@ async def addfilter(client, message):
 
     await message.reply_text(f"Filter for  `{text}`  added in  **{title}**", quote=True, parse_mode=enums.ParseMode.MARKDOWN)
 
-@Client.on_message(filters.command(['afs', 'vaf']) & filters.incoming)
+@Client.on_message(filters.command(['view', 'vaf']) & filters.incoming)
 async def get_all(client, message):
     
     chat_type = message.chat.type
