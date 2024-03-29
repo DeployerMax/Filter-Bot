@@ -7,7 +7,7 @@ There is no practical limits for my filtering capacity :)
 
 See help button for commands and more details
 
-Working For @Chowdhury_Siam
+Working For @Londe_Lapate
 """
 
 HelpTxT = """
@@ -21,10 +21,10 @@ Add me as admin in your group and start filtering :)
 
 <b>Filter Commands;</b>
 
-<code>/af </code>  -  Add filter for name
-<code>/sf </code>  -  Delete filter
-<code>/saf</code>  -  Delete entire filters (Group Owner Only!)
-<code>/afs</code>  -  List all filters in chat
+<code>/add </code>  -  Add filter
+<code>/del </code>  -  Delete filter
+<code>/delall</code>  -  Delete entire filters (Group Owner Only!)
+<code>/view</code>  -  List all filters in chat
 
 <b>Connection Commands;</b>
 <code>/connect group id</code>  -  Connect your group to my PM. You can also simply use,
@@ -36,13 +36,13 @@ Add me as admin in your group and start filtering :)
 /id  -  Shows ID information
 /info userid  -  Shows User Information. Use <code>/info</code> as reply to some message for their details!
 
-© @Chowdhury_Siam
+© @Londe_Lapate
 """
 
 AboutTxT = """
-⭕️ Developers : @Chowdhury_Siam</b>
-⭕️ Official Channel : @Anime_Kun_Channel 
-⭕️ Official Group : @AnimeKunChannel
+⭕️ Developers : @Londe_Lapate</b>
+⭕️ Official Channel : @RequestedFiles69 
+⭕️ Official Group : @AnonymousDiscussion_Grp
 ⭕️ Language : Python3
 ⭕️ Library : <a href='https://docs.pyrogram.org/'>Pyrogram 2.0.102</a> 
 """
