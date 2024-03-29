@@ -17,8 +17,8 @@ async def startCMD(client: FilterBot, message: Message):
       InlineKeyboardButton('Help', callback_data='main#help'),
       InlineKeyboardButton('About', callback_data='main#about')
       ],[
-      InlineKeyboardButton('Update', url='t.me/Anime_Kun_Channel'),
-      InlineKeyboardButton('Support', url='t.me/AnimeKunChannel')
+      InlineKeyboardButton('Update', url='t.me/RequestedFiles69'),
+      InlineKeyboardButton('Support', url='t.me/AnonymousDiscussion_Grp')
       ]]
 
     if "motech" == BOT_PICS[0]:
@@ -48,7 +48,7 @@ async def aboutCMD(client: FilterBot, message: Message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.first_name, message.from_user.id)
 
-    keyboard = [[ InlineKeyboardButton('Bot Owner 👑', url='https://t.me/Chowdhury_Siam'),
+    keyboard = [[ InlineKeyboardButton('Bot Owner 👑', url='https://t.me/Londe_Lapate'),
                    InlineKeyboardButton('Contact for Repo ✨', url='https://t.me/Chowdhury_Siam') ],
                 [ InlineKeyboardButton('Home', callback_data='main#start'),
                   InlineKeyboardButton('Help', callback_data='main#help') ]]
@@ -84,7 +84,7 @@ async def maincallback(client: FilterBot, message):
         await message.message.edit(text=HelpTxT, reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
 
     elif type == "about":
-        keyboard = [[ InlineKeyboardButton('Bot Owner 👑', url='https://t.me/Chowdhury_Siam'),
+        keyboard = [[ InlineKeyboardButton('Bot Owner 👑', url='https://t.me/Londe_Lapate'),
                        InlineKeyboardButton('Contact for Repo ✨', url='https://t.me/Chowdhury_Siam') ],
                     [ InlineKeyboardButton('Home', callback_data='main#start'),
                       InlineKeyboardButton('Help', callback_data='main#help') ]]
