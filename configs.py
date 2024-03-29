@@ -44,11 +44,11 @@ if bool(environ.get("WEBHOOK", False)):
 
     # OPTIONAL - To set alternate BOT COMMANDS
 
-    ADD_FILTER_CMD = environ.get("ADD_FILTER_CMD", "af")
+    ADD_FILTER_CMD = environ.get("ADD_FILTER_CMD", "add")
 
-    DELETE_FILTER_CMD = environ.get("DELETE_FILTER_CMD", "sf")
+    DELETE_FILTER_CMD = environ.get("DELETE_FILTER_CMD", "del")
 
-    DELETE_ALL_CMD = environ.get("DELETE_ALL_CMD", "saf")
+    DELETE_ALL_CMD = environ.get("DELETE_ALL_CMD", "delall")
 
     CONNECT_COMMAND = environ.get("CONNECT_CMD", "connect")
 
@@ -56,9 +56,9 @@ if bool(environ.get("WEBHOOK", False)):
 
     BOT_PICS = (environ.get('BOT_PICS', "")).split()
 
-    FORCE_SUB = environ.get("UPDATE_CHANNEL", "Anime_Kun_Channel")
+    FORCE_SUB = environ.get("UPDATE_CHANNEL", "RequestedFiles69")
 
-    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "AnimeKunChannel")
+    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "AnonymousDiscussion_Grp")
 
     START_TXT = environ.get("START_TXT", StartTxT)
 
@@ -68,7 +68,7 @@ if bool(environ.get("WEBHOOK", False)):
 
     AUTO_DELETE = bool(environ.get("AUTO_DELETE", True))
 
-    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 300))
+    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 180))
 
     PORT = environ.get('PORT', '8080')
 
