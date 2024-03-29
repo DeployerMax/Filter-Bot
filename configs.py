@@ -13,7 +13,7 @@ def LOGGER(name: str) -> Logger:
 if bool(environ.get("WEBHOOK", False)):
 
     try:
-        API_ID = int(environ.get("API_ID", 1234))
+        API_ID = int(environ.get("API_ID", ))
     except Exception as e:
         print(f"API_ID Invalid: \n\nLogs: {e}")
 
@@ -44,21 +44,21 @@ if bool(environ.get("WEBHOOK", False)):
 
     # OPTIONAL - To set alternate BOT COMMANDS
 
-    ADD_FILTER_CMD = environ.get("ADD_FILTER_CMD", "add")
+    ADD_FILTER_CMD = environ.get("ADD_FILTER_CMD", "af")
 
-    DELETE_FILTER_CMD = environ.get("DELETE_FILTER_CMD", "del")
+    DELETE_FILTER_CMD = environ.get("DELETE_FILTER_CMD", "sf")
 
-    DELETE_ALL_CMD = environ.get("DELETE_ALL_CMD", "delall")
+    DELETE_ALL_CMD = environ.get("DELETE_ALL_CMD", "saf")
 
     CONNECT_COMMAND = environ.get("CONNECT_CMD", "connect")
 
     DISCONNECT_COMMAND = environ.get("DISCONNECT_CMD", "disconnect")
 
-    BOT_PICS = (environ.get('BOT_PICS', "motech")).split()
+    BOT_PICS = (environ.get('BOT_PICS', "")).split()
 
-    FORCE_SUB = environ.get("UPDATE_CHANNEL", "")
+    FORCE_SUB = environ.get("UPDATE_CHANNEL", "Anime_Kun_Channel")
 
-    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "official_learning_bots_Support")
+    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "AnimeKunChannel")
 
     START_TXT = environ.get("START_TXT", StartTxT)
 
@@ -68,7 +68,7 @@ if bool(environ.get("WEBHOOK", False)):
 
     AUTO_DELETE = bool(environ.get("AUTO_DELETE", True))
 
-    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 300))
+    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 60))
 
     PORT = environ.get('PORT', '8080')
 
