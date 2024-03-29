@@ -1,6 +1,5 @@
 ## Filter-Bot
 
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=PR0FESS0R-99&repo=FilterBot&theme=dark)
 
 - [x] An advanced Telegram Filter Bot with nearly unlimitted filters!</b>
 
@@ -57,21 +56,21 @@
 
 ### Variables 
 
-Read [this](https://github.com/PR0FESS0R-99/Filter-Bot/blob/Professor-99/variables.py) before you start messing up with your edits.
+Read [this](https://github.com/Chowdhury-Siam/AnimeKunFilter-bot/blob/Siam/variables.py) before you start messing up with your edits.
 
 > Required Variables..
 
-- `API_ID` : Get this value from [here tutorial](https://youtu.be/F45N32GCyMo)
+- `API_ID` : Get this value from [here tutorial](https://youtu.be/)
 
-- `API_HASH` : Get this value from [here tutorial](https://youtu.be/F45N32GCyMo)
+- `API_HASH` : Get this value from [here tutorial](https://youtu.be/)
 
 - `BOT_TOKEN` : Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
 
 - `ADMINS` : Username or ID of Admin. Separate multiple Admins by space
 
-- `DATABASE_URI` : mongoDB URI. Get this value from mongoDB. For more help watch this [video](https://youtu.be/mD9veNL7KoE)
+- `DATABASE_URI` : mongoDB URI. Get this value from mongoDB. For more help watch this [video](https://youtu.be/)
 
-- `DATABASE_NAME` : mongoDB Name. Get this value from mongoDB. For more help watch this [video](https://youtu.be/mD9veNL7KoE)
+- `DATABASE_NAME` : mongoDB Name. Get this value from mongoDB. For more help watch this [video](https://youtu.be/)
 
 - `PICS` : Telegraph links of images to show in start message.( Multiple images can be used separated by space )
 
@@ -91,19 +90,15 @@ Read [this](https://github.com/PR0FESS0R-99/Filter-Bot/blob/Professor-99/variabl
 
 > Thanks to [pyrogram](https://github.com/pyrogram/pyrogram)
 
-> Thanks to [TroJanzHEX](https://github.com/TroJanzHEX/Unlimited-Filter-Bot)
-
-> Thanks to [MoTech](https://github.com/PR0FESS0R-99/MoTech)
-
 ### Deploy to
 
 <details><summary>Deploy To Rander</summary>
 <br>
-<p><a href="https://youtu.be/vbloWcdxjxg">
+<p><a href="https://youtu.be/">
     Watch Deploying Tutorial...
 </a></p>
 
-<p><a href="https://render.com/deploy?repo=https://github.com/Learningbots79/BestFilterbot">
+<p><a href="https://render.com/deploy?repo=https://github.com/Chowdhury-Siam/AnimeKunFilter-bot">
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy">
 </a></p>
 </details>
