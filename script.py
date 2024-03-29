@@ -6,6 +6,8 @@ I'm an advanced filter bot with many capabilities!
 There is no practical limits for my filtering capacity :)
 
 See help button for commands and more details
+
+Working For @Chowdhury_Siam
 """
 
 HelpTxT = """
@@ -19,13 +21,13 @@ Add me as admin in your group and start filtering :)
 
 <b>Filter Commands;</b>
 
-<code>/add name reply</code>  -  Add filter for name
-<code>/del name</code>  -  Delete filter
-<code>/delall</code>  -  Delete entire filters (Group Owner Only!)
-<code>/viewfilters</code>  -  List all filters in chat
+<code>/af </code>  -  Add filter for name
+<code>/sf </code>  -  Delete filter
+<code>/saf</code>  -  Delete entire filters (Group Owner Only!)
+<code>/afs</code>  -  List all filters in chat
 
 <b>Connection Commands;</b>
-<code>/connect groupid</code>  -  Connect your group to my PM. You can also simply use,
+<code>/connect group id</code>  -  Connect your group to my PM. You can also simply use,
 <code>/connect</code> in groups.
 <code>/connections</code>  -  Manage your connections.
 
@@ -34,13 +36,13 @@ Add me as admin in your group and start filtering :)
 /id  -  Shows ID information
 /info userid  -  Shows User Information. Use <code>/info</code> as reply to some message for their details!
 
-© @learningbots79
+© @Chowdhury_Siam
 """
 
 AboutTxT = """
-⭕️ Official Channel : @learningbots79</b>
-⭕️ Developers : @TroJanzHEX 
-⭕️ Upgrader : @Mo_Tech_YT
+⭕️ Developers : @Chowdhury_Siam</b>
+⭕️ Official Channel : @Anime_Kun_Channel 
+⭕️ Official Group : @AnimeKunChannel
 ⭕️ Language : Python3
 ⭕️ Library : <a href='https://docs.pyrogram.org/'>Pyrogram 2.0.102</a> 
 """
