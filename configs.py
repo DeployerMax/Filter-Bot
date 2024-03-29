@@ -13,12 +13,12 @@ def LOGGER(name: str) -> Logger:
 if bool(environ.get("WEBHOOK", False)):
 
     try:
-        API_ID = int(environ.get("API_ID", 27778444))
+        API_ID = int(environ.get("API_ID", 1234))
     except Exception as e:
         print(f"API_ID Invalid: \n\nLogs: {e}")
 
     try:
-        API_HASH = environ.get("API_HASH", "616f27aaae76d8f2c474353b3da993f9")
+        API_HASH = environ.get("API_HASH", "")
     except Exception as e:
         print(f"API_HASH Invalid: \n\nLogs: {e}")
 
