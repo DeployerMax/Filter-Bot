@@ -74,8 +74,8 @@ async def maincallback(client: FilterBot, message):
         keyboard = [[ InlineKeyboardButton('Add Me To Your Chat', url=f"t.me/{bot.username}?startgroup=true") ],
                     [ InlineKeyboardButton('Help', callback_data='main#help'),
                       InlineKeyboardButton('About', callback_data='main#about') ],
-                    [ InlineKeyboardButton('Update', url='t.me/Anime_Kun_Channel'),
-                      InlineKeyboardButton('Support', url='t.me/AnimeKunChannel') ]]
+                    [ InlineKeyboardButton('Update', url='t.me/RequestedFiles69'),
+                      InlineKeyboardButton('Support', url='t.me/AnonymousDiscussion_Grp') ]]
         await message.message.edit(text=StartTxT.format(mention=message.from_user.mention), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
 
     elif type == "help":
