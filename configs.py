@@ -10,35 +10,35 @@ getLogger("pyrogram").setLevel(WARNING)
 def LOGGER(name: str) -> Logger:
     return getLogger(name)
 
-if bool(environ.get("WEBHOOK", False)):
+if bool(environ.get("WEBHOOK", True)):
 
     try:
-        API_ID = int(environ.get("API_ID", 1234))
+        API_ID = int(environ.get("API_ID", 23143864))
     except Exception as e:
         print(f"API_ID Invalid: \n\nLogs: {e}")
 
     try:
-        API_HASH = environ.get("API_HASH", "")
+        API_HASH = environ.get("API_HASH", "726e02cd51d31364d6aca817dac5ed81")
     except Exception as e:
         print(f"API_HASH Invalid: \n\nLogs: {e}")
 
     try:
-        BOT_TOKEN = environ.get("BOT_TOKEN", "")
+        BOT_TOKEN = environ.get("BOT_TOKEN", "7162331708:AAGygSpGuCMrxNc-Y1Y8VtB90W7rsp2yhsk")
     except Exception as e:
         print(f"BOT_TOKEN Invalid: \n\nLogs: {e}")
 
     try:
-        DATABASE_URI = environ.get("DATABASE_URI", "")
+        DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://DBotGMB:megatron123~`|@cluster0.o8i94ei.mongodb.net/?retryWrites=true&w=majority")
     except Exception as e:
         print(f"DATABASE_URI Invalid: \n\nLogs: {e}")
 
     try:
-        DATABASE_NAME = environ.get("DATABASE_NAME", "animekunfilterbot")
+        DATABASE_NAME = environ.get("DATABASE_NAME", "filterbot")
     except Exception as e:
         print(f"DATABASE_NAME Invalid: \n\nLogs: {e}")
 
     try:
-        ADMINS = set(str(x) for x in environ.get("ADMINS", "").split())
+        ADMINS = set(str(x) for x in environ.get("ADMINS", "1597430863 2034487523").split())
     except Exception as e:
         print(f"ADMINS Invalid: \n\nLogs: {e}")
 
@@ -54,7 +54,7 @@ if bool(environ.get("WEBHOOK", False)):
 
     DISCONNECT_COMMAND = environ.get("DISCONNECT_CMD", "disconnect")
 
-    BOT_PICS = (environ.get('BOT_PICS', "")).split()
+    BOT_PICS = (environ.get('BOT_PICS', "https://te.legra.ph/file/7a48cdba102dc73e82d76.jpg")).split()
 
     FORCE_SUB = environ.get("UPDATE_CHANNEL", "RequestedFiles69")
 
@@ -68,7 +68,7 @@ if bool(environ.get("WEBHOOK", False)):
 
     AUTO_DELETE = bool(environ.get("AUTO_DELETE", True))
 
-    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 180))
+    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 72000))
 
     PORT = environ.get('PORT', '8080')
 
