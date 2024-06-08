@@ -68,7 +68,7 @@ if bool(environ.get("WEBHOOK", True)):
 
     AUTO_DELETE = bool(environ.get("AUTO_DELETE", True))
 
-    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 72000))
+    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 1200))
 
     PORT = environ.get('PORT', '8080')
 
